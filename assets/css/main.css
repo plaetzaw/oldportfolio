@@ -11,9 +11,13 @@
 Hover Affect
 */
 
+.imgDisplay {
+  max-height: 100%;
+}
+
 .view {
-  width: 400px;
-  height: 400px;
+  width: 475px;
+  height: 300px;
   margin: 10px;
   float: left;
   border: 10px solid #fff;
@@ -22,12 +26,13 @@ Hover Affect
   text-align: center;
   box-shadow: 1px 1px 2px #e6e6e6;
   cursor: default;
-  /* background: #fff url(../images/CodeBG.jpg) no-repeat center center; */
+  background-image: url();
+  background: #fff url(../images/CodeBG.jpg) no-repeat center center;
 }
 .view .mask,
 .view .content {
-  width: 400px;
-  height: 400px;
+  width: 475px;
+  height: 300px;
   position: absolute;
   overflow: hidden;
   top: 0;
