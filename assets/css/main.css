@@ -11,6 +11,12 @@
 Hover Affect
 */
 
+/* .projectDisplay {
+  display: block;
+  width: 50%;
+  margin: 0 0 1em 0;
+} */
+
 .imgDisplay {
   max-height: 100%;
 }
@@ -2884,6 +2890,12 @@ button:active,
 
   #main section.cover header {
     padding: 0 1em;
+  }
+
+  .imageFeatured {
+    display: block;
+    width: 75%;
+    margin: 0 0 2em 0;
   }
 
   /* Footer */
