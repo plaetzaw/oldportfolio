@@ -116,6 +116,8 @@
             <br>
             <br>
             <br>
+            <!-- Row 1 -->
+
           <div class="row">
             <div class="col-6 col-12-mobile">
               <div class="view view-first ">  
@@ -148,6 +150,7 @@
     </div>
   
 
+  <!-- Row 2   -->
   <div class="row">
     <div class="col-6 col-12-mobile">
               <div class="view view-first">  
@@ -176,6 +179,8 @@
                 </div>
   </div>
 
+<!-- Row 3 -->
+
   <div class="row">
     <div class="col-6 col-12-mobile">
       <div class="view view-first">  
@@ -195,10 +200,10 @@
         <div class="view view-first">  
          <img src="images/CodeBG.jpg" class="imgDisplay"/>  
           <div class="mask">  
-          <h2>Untitled React Project</h2>  
-          <p>Coming mid-April
+          <h2>WatchList</h2>  
+          <p>This is a project built with React and Redux. This allows a user to sort through movies and add/remove them from their own personal "Watchlist"
           </p>  
-          <a href="#" class="info">Read More</a>  
+          <a href="https://github.com/plaetzaw/WatchList" class="info">Read More</a>  
         </div>  
         </div>
         </div>
@@ -300,10 +305,10 @@
 
           
 
-          <form method="post" action="#">
+          <form method="post" action="/email.php">
             <div class="row">
               <div class="col-6 col-12-mobile">
-                <input type="text" name="name" placeholder="Name" />
+                <input type="text" name="contact_name" placeholder="Name" />
               </div>
               <div class="col-6 col-12-mobile">
                 <input type="text" name="email" placeholder="Email" />
@@ -312,7 +317,7 @@
                 <textarea name="message" placeholder="Message"></textarea>
               </div>
               <div class="col-12">
-                <input type="submit" value="Send Message" />
+                <input type="submit" name="submit" value="Send Message" />
               </div>
             </div>
           </form>
@@ -320,6 +325,12 @@
       </section>
     </div>
 
+
+    <!-- <form method="post" action="/email.php">
+      <input type="text" name="email_field" />
+      <input type="text" name="message_field" />
+      <input type="submit" value="Submit email">
+    </form> -->
 
     <!-- Footer -->
     <div id="footer">
@@ -331,20 +342,7 @@
     </div>
 
     <!-- Scripts -->
-  <script type="php">
-  if (isset($_POST['submit'])){  
-  <?php $Name = $_POST['Name'];
-  $Email = $_POST['Email'];
-  $Message = $_POST['Message'];
-  $formcontent="From: $Name \n Message: $Message";
-  $recipient = "plaetzaw@gmail.com";
-  $subject = "Contact Form";
-  $mailheader = "From: $Email \r\n";
-  mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-  echo "Thank You!";
-  }
-  ?>
-  </script>
+  <script src="email.php"></script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
